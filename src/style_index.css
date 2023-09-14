@@ -9,7 +9,6 @@ body{
     background-color: #b4b7b7;
     margin: 0 auto;
     width: 85%;
-    height: auto;
 }
 
 .cabecera{
@@ -18,7 +17,8 @@ body{
     align-items: center;
     padding: 2% 1%;
     background: #3a3b3b;
-    
+    height: 10vh;
+
 }
 .cabecera h1{
     width: 85%;
@@ -28,6 +28,11 @@ body{
 .cabecera img{
     width: 25px;
     height: 25px;
+}
+
+/*main*/
+.principal{
+    height: 80vh;
 }
 
 .navegacion{
@@ -98,4 +103,18 @@ body{
 .contenido img{
     width: 40%;
     margin: 0 auto;
+}
+
+/*Footer*/
+
+.pie__pagina{
+    background-color: #3a3b3b;
+    height: 8.5vh;
+    display: flex;
+    flex-direction: column;
+}
+.pie__pagina p{
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
 }
