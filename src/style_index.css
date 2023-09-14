@@ -44,13 +44,13 @@ body{
     text-decoration: none;
     color: rgb(2, 2, 2);
     font-size: 1.5rem;
-    
+    font-weight:bold ;
     transition: 0.8s ease;
     background-color: transparent;
 }
 
 .navegacion__item a:hover{
-    color: rgb(231, 232, 235);
+    color: rgb(125, 125, 132);
 }
 
 .divisor{
@@ -61,18 +61,41 @@ body{
 
 .indice{
     width: 29.5%;
+    max-height: 200px;
     border: 1px solid;
     padding: 5px 15px;
     background-color: rgb(255, 255, 255);
+}
+.indice ul li{
+    margin-top: 5% ;
+    margin-left: 10%;
+}
+.indice ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight:bold ;
+    transition: 0.5s ease;
+}
+.indice ul li a:hover{
+    color: rgb(125, 125, 132);
 }
 
 .contenido{
     width: 69.5%;
     border: 1px solid;
     padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
 }
 
 .texto{
     margin-bottom: 10px;
+}
+
+/*Explicacion*/
+
+.contenido img{
+    width: 40%;
+    margin: 0 auto;
 }
