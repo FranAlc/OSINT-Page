@@ -6,7 +6,7 @@
 }
 
 body{       
-    background-color: #14526e;
+    background-color: #b4b7b7;
     margin: 0 auto;
     width: 85%;
     height: auto;
@@ -17,11 +17,12 @@ body{
     justify-content:space-between;
     align-items: center;
     padding: 2% 1%;
-    background: #63909c;
+    background: #3a3b3b;
     
 }
 .cabecera h1{
     width: 85%;
+    color: rgb(255, 255, 255);
 }
 
 .cabecera img{
@@ -41,14 +42,15 @@ body{
 
 .navegacion__item a{
     text-decoration: none;
-    color: black;
+    color: rgb(2, 2, 2);
     font-size: 1.5rem;
+    
     transition: 0.8s ease;
     background-color: transparent;
 }
 
 .navegacion__item a:hover{
-    color: brown;
+    color: rgb(231, 232, 235);
 }
 
 .divisor{
@@ -61,14 +63,14 @@ body{
     width: 29.5%;
     border: 1px solid;
     padding: 5px 15px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 
 .contenido{
     width: 69.5%;
     border: 1px solid;
     padding: 5px 15px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 
 .texto{
