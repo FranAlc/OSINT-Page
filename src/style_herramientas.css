@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; 
+}
+
+body{       
+    background-color: #b4b7b7;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.cabecera{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2% 1%;
+    background: #3a3b3b;
+    height: 10vh;
+
+}
+.cabecera h1{
+    width: 85%;
+    color: rgb(255, 255, 255);
+}
+
+.cabecera img{
+    width: 30px;
+    height: 30px;
+}
+
+/*main*/
+.principal{
+    height: 80vh;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.navegacion__item{
+    display: inline;
+}
+
+.navegacion__item a{
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    font-size: 1.5rem;
+    font-weight:bold ;
+    transition: 0.8s ease;
+    background-color: transparent;
+}
+
+.navegacion__item a:hover{
+    color: rgb(125, 125, 132);
+}
+
+.divisor{
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+.indice{
+    width: 29.5%;
+    max-height: 200px;
+    border: 1px solid;
+    padding: 5px 15px;
+    background-color: rgb(255, 255, 255);
+}
+.indice ul li{
+    margin-top: 5% ;
+    margin-left: 10%;
+}
+.indice ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight:bold ;
+    transition: 0.5s ease;
+}
+.indice ul li a:hover{
+    color: rgb(125, 125, 132);
+}
+
+
+.texto{
+    margin-bottom: 10px;
+}
+
+/*Explicacion*/
+.contenido{
+    width: 69.5%;
+    border: 1px solid;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.contenido img{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.contenido li{
+    margin-top: 10px;
+}
+
+/*Footer*/
+
+.pie__pagina{
+    background-color: #3a3b3b;
+    height: 8.5vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 111%; /*modificarlo*/
+    
+}
+.pie__pagina p{
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    
+}
+
