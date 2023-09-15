@@ -26,8 +26,8 @@ body{
 }
 
 .cabecera img{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 /*main*/
@@ -85,6 +85,13 @@ body{
     color: rgb(125, 125, 132);
 }
 
+
+.texto{
+    margin-bottom: 10px;
+}
+
+/*Explicacion*/
+
 .contenido{
     width: 69.5%;
     border: 1px solid;
@@ -93,13 +100,6 @@ body{
     flex-direction: column;
     background-color: rgb(255, 255, 255);
 }
-
-.texto{
-    margin-bottom: 10px;
-}
-
-/*Explicacion*/
-
 .contenido img{
     width: 40%;
     margin: 0 auto;
@@ -112,6 +112,7 @@ body{
     height: 8.5vh;
     display: flex;
     flex-direction: column;
+    margin-top: 14%; /*modificar*/
 }
 .pie__pagina p{
     text-align: center;
