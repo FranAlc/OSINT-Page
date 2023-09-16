@@ -45,7 +45,7 @@ btn_google.addEventListener('click', abrirGoogle);
 //Bing Búsqueda
 const btn_bing = document.getElementById('btn_busqueda_bing');
 function abrirBing(){
-    const usuarioIg = document.getElementById('busquedaBing');
+    const usuarioIg = document.getElementById('busquedaBing').value;
     const bingUrl = `https://www.bing.com/search?q=site%3Ainstagram.com+%22${usuarioIg}%22`;
     window.open(bingUrl, '_blank');
 }
