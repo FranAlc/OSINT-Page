@@ -72,7 +72,7 @@ const btn_hashtag_dumpor = document.getElementById('btn_hashtag_dumport');
 btn_hashtag_dumpor.addEventListener('click', buscarHashtagDumpor);
 
 //////////////////////////Twitter/////////////////////////////
-
+//Ver perfil
 function abrirPerfilTw(){
     const usuarioTw = document.getElementById('twPerfil').value;
     const usuarioTwUrl = `https://twitter.com/${usuarioTw}`;
@@ -81,7 +81,7 @@ function abrirPerfilTw(){
 const btn_perfil_tw = document.getElementById('btn_perfil_tw');
 btn_perfil_tw.addEventListener('click', abrirPerfilTw);
 
-
+//Ver los tweets
 function abrirTwSalientes(){
     const usuarioTw = document.getElementById('tweets').value;
     const tweetsUrl = `https://twitter.com/search?q=to%3A${usuarioTw}&f=live`;
@@ -90,3 +90,12 @@ function abrirTwSalientes(){
 const btn_ver_tws = document.getElementById('btn_tweets');
 btn_ver_tws.addEventListener('click', abrirTwSalientes);
 
+//Tweets Likeados
+function abrirTwLikeados(){
+    const usuarioTw = document.getElementById('twLike').value;
+    const tweetsUrl = `https://twitter.com/${usuarioTw}/likes/`;
+    window.open(tweetsUrl, '_blank') 
+}
+
+
+//Respuesta a tweets
