@@ -24,15 +24,10 @@ document.getElementById('btn_perfil_ig').addEventListener('click', function(){
     }
 });
 
-//Toolzu
-function redireccionar_usuario_toolzu(igToolzu){
-    var toolzuUrl = `https://toolzu.com/profile-analyzer/instagram/?username=${igToolzu}`;
-    window.location.href = toolzuUrl;
+//Toolzu otra forma diferente de realizar la accion de envio en un btn
+function toolzuSearch(){
+    var usuario = document.getElementById('igToolzu').value;
+    var toolzuUrl = `https://toolzu.com/profile-analyzer/instagram/?username=${usuario}`;
+    window.open(toolzuUrl, '_blank');
 }
 
-document.getElementById('btn_perfil_toolzu').addEventListener('click', function(){
-    var username2 = document.getElementById("igToolzu").value;
-    if (username2){
-        redireccionar_usuario_toolzu(username2);
-    }
-});
