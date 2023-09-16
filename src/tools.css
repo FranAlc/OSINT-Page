@@ -141,9 +141,8 @@ body{
 }
 /*Hashtag*/
 .hasht input{
-    font-size: 18px;
     width: 220px;
-    height: 31px;
+    height: 30px;
     margin-bottom: 5px;
 }
 .hasht button{
