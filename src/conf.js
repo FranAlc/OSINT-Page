@@ -10,7 +10,5 @@ autocompletarTodoButton.addEventListener('click', function(event) {
     document.getElementById('igToolzu').value = valorAutocompletar;
     document.getElementById('busquedaGoogle').value = valorAutocompletar;
     document.getElementById('busquedaBing').value = valorAutocompletar;
-    document.getElementById('hashIg').value = valorAutocompletar;
-    document.getElementById('hashDumpor').value = valorAutocompletar;
 });
 
