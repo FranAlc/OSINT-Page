@@ -17,7 +17,7 @@ body{
     align-items: center;
     padding: 2% 1%;
     background: #3a3b3b;
-    height: 10vh;
+    
 
 }
 .cabecera h1{
@@ -31,9 +31,6 @@ body{
 }
 
 /*main*/
-.principal{
-    height: 80vh;
-}
 
 .navegacion{
     display: flex;
@@ -114,12 +111,10 @@ body{
 
 .pie__pagina{
     background-color: #3a3b3b;
-    height: 8.5vh;
     display: flex;
     flex-direction: column;
-    margin-top: 111%; /*modificarlo*/
-    
 }
+
 .pie__pagina p{
     text-align: center;
     margin-top: 15px;
