@@ -1,3 +1,4 @@
+//////////////////////////Instagram/////////////////////////////
 //Botones
 //Instagram opcion 1
 /*document.getElementById('btn_perfil_ig').addEventListener('click', function(){
@@ -69,3 +70,8 @@ function buscarHashtagDumpor(){
 }
 const btn_hashtag_dumpor = document.getElementById('btn_hashtag_dumport');
 btn_hashtag_dumpor.addEventListener('click', buscarHashtagDumpor);
+
+//////////////////////////Twitter/////////////////////////////
+
+
+
