@@ -69,7 +69,7 @@ body{
     max-height: 200px;
     border: 1px solid;
     padding: 5px 15px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);   
 }
 .indice ul li{
     margin-top: 5% ;
@@ -82,13 +82,36 @@ body{
     transition: 0.5s ease;
 }
 .indice ul li a:hover{
-    color: rgb(125, 125, 132);
+    color: rgb(85, 25, 137);
 }
 
+
+/*indice 2 (busqueda)*/
+/*
+.indice_busqueda{
+    
+
+}
+.indice_busqueda ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight:bold ;
+    transition: 0.3s ease;
+}
+
+.indice_busqueda ul li{
+    list-style: none;
+    margin-top: 5% ;
+    margin-left: 10%;
+}
+.indice_busqueda ul li a:hover{
+    color: rgb(85, 25, 137);
+}
 
 .texto{
     margin-bottom: 10px;
 }
+*/
 
 /*Explicacion*/
 .contenido{
@@ -110,6 +133,31 @@ body{
     margin-top: 10px;
 }
 
+/*Contenido de los formularios*/
+.contenido .forms {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.contenido .forms input {
+    /* Estilos para los input */
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.contenido .forms button {
+    /* Estilos para los botones */
+    font-size: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
 /*Footer*/
 
 .pie__pagina{
@@ -117,7 +165,7 @@ body{
     height: 8.5vh;
     display: flex;
     flex-direction: column;
-    margin-top: 111%; /*modificarlo*/
+    margin-top:0px ; /*modificarlo*/
     
 }
 .pie__pagina p{
