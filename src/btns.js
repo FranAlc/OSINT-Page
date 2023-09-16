@@ -73,5 +73,20 @@ btn_hashtag_dumpor.addEventListener('click', buscarHashtagDumpor);
 
 //////////////////////////Twitter/////////////////////////////
 
+function abrirPerfilTw(){
+    const usuarioTw = document.getElementById('twPerfil').value;
+    const usuarioTwUrl = `https://twitter.com/${usuarioTw}`;
+    window.open(usuarioTwUrl, '_blank');
+}
+const btn_perfil_tw = document.getElementById('btn_perfil_tw');
+btn_perfil_tw.addEventListener('click', abrirPerfilTw);
 
+
+function abrirTwSalientes(){
+    const usuarioTw = document.getElementById('tweets').value;
+    const tweetsUrl = `https://twitter.com/search?q=to%3A${usuarioTw}&f=live`;
+    window.open(tweetsUrl, '_blank') 
+}
+const btn_ver_tws = document.getElementById('btn_tweets');
+btn_ver_tws.addEventListener('click', abrirTwSalientes);
 
