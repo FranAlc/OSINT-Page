@@ -33,5 +33,39 @@ function abrirToolzu(){
 }
 btn_Toolzu.addEventListener('click', abrirToolzu);
 
-//Google Busqueda
+//Google Búsqueda
+const btn_google = document.getElementById('btn_busqueda_google');
+function abrirGoogle(){
+    const usuarioIg = document.getElementById('busquedaGoogle').value;
+    const googleUrl = `https://www.google.com/search?q=site%3Ainstagram.com+%22${usuarioIg}%22`;
+    window.open(googleUrl, '_blank');
+}
+btn_google.addEventListener('click', abrirGoogle);
 
+//Bing Búsqueda
+const btn_bing = document.getElementById('busquedaBing');
+function abrirBing(){
+    const usuarioIg = document.getElementById('busquedaBing');
+    const bingUrl = `https://www.bing.com/search?q=site%3Ainstagram.com+%22${usuarioIg}%22`;
+    window.open(bingUrl, '_blank');
+}
+btn_bing.addEventListener('click', abrirBing);
+
+//Hashtag Instagram
+
+function buscarHashtag(){
+    const usuarioIg = document.getElementById('hashIg').value;
+    const hashtagUrl = `https://www.instagram.com/explore/tags/${usuarioIg}/`;
+    window.open(hashtagUrl, '_blank');
+}
+const btn_hashtag_ig = document.getElementById('btn_hashtag_ig');
+btn_hashtag_ig.addEventListener('click', buscarHashtag);
+
+//Hashtag Dumpor
+function buscarHashtagDumpor(){
+    const usuarioIg = document.getElementById('hashDumpor').value;
+    const hashtagUrl = `https://dumpoir.com/t/${usuarioIg}`;
+    window.open(hashtagUrl, '_blank');
+}
+const btn_hashtag_dumpor = document.getElementById('btn_hashtag_dumport');
+btn_hashtag_dumpor.addEventListener('click', buscarHashtagDumpor);
