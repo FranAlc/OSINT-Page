@@ -107,6 +107,50 @@ body{
     margin-top: 10px;
 }
 
+
+/*Formulario*/
+/*Agrega a todos*/
+.busqueda_completa{
+    margin-bottom: 20px;
+}
+.busqueda_completa input{
+    width: 220px;
+    height: 30px;
+}
+
+.busqueda_completa button{
+    width: 130px;
+    height: 32px;
+    font-weight: bold;
+}
+/*Busqueda*/
+.red_search{
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.red_search input{
+    width: 220px;
+    height: 30px;
+}
+.red_search button{
+    width: 130px;
+    height: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/*Hashtag*/
+.hasht input{
+    font-size: 18px;
+    width: 220px;
+    height: 31px;
+    margin-bottom: 5px;
+}
+.hasht button{
+    width: 130px;
+    height: 32px;
+    font-weight: bold;
+}
 /*Footer*/
 
 .pie__pagina{
@@ -121,6 +165,8 @@ body{
     color: rgb(255, 255, 255);
     
 }
+
+
 
 
 
