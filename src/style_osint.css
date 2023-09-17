@@ -17,8 +17,9 @@ body{
     align-items: center;
     padding: 2% 1%;
     background: #3a3b3b;
-}
+    
 
+}
 .cabecera h1{
     width: 85%;
     color: rgb(255, 255, 255);
@@ -62,7 +63,7 @@ body{
 
 .indice{
     width: 29.5%;
-    max-height: 200px;
+    max-height: 460px;
     border: 1px solid;
     padding: 5px 15px;
     background-color: rgb(255, 255, 255);
@@ -73,7 +74,7 @@ body{
 }
 .indice ul li a{
     text-decoration: none;
-    color: black;
+    color: rgb(38, 45, 98);
     font-weight:bold ;
     transition: 0.5s ease;
 }
@@ -81,6 +82,12 @@ body{
     color: rgb(125, 125, 132);
 }
 
+.indice .toolsMenu li a{
+    color: rgb(86, 160, 239);
+}
+.toolsMenu{
+    list-style: none;
+}
 
 .texto{
     margin-bottom: 10px;
@@ -106,6 +113,49 @@ body{
     margin-top: 10px;
 }
 
+
+/*Formulario*/
+/*Agrega a todos*/
+.busqueda_completa{
+    margin-bottom: 20px;
+}
+.busqueda_completa input{
+    width: 220px;
+    height: 30px;
+}
+
+.busqueda_completa button{
+    width: 130px;
+    height: 32px;
+    font-weight: bold;
+}
+/*Busqueda*/
+.red_search{
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.red_search input{
+    width: 220px;
+    height: 30px;
+}
+.red_search button{
+    width: 130px;
+    height: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/*Hashtag*/
+.hasht input{
+    width: 220px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+.hasht button{
+    width: 130px;
+    height: 32px;
+    font-weight: bold;
+}
 /*Footer*/
 
 .pie__pagina{
@@ -113,9 +163,47 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 .pie__pagina p{
     text-align: center;
     margin-top: 15px;
     color: rgb(255, 255, 255);
+    
 }
+
+@media screen and (max-width: 945px) {
+    .divisor{
+        flex-direction: column;
+        gap: 15px;
+    } 
+    .contenido{
+        width: 100%;
+
+    }
+
+    .indice{
+        width: 100%;
+        max-height: 500px;
+    }
+    .indice ul li{
+        margin-top: 3%;
+    }
+
+    .texto{
+        text-align: center;
+    }
+
+    .forms{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toolsMenu{
+        list-style: none;
+    }
+
+    
+}
+
 

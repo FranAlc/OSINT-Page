@@ -63,7 +63,7 @@ body{
 
 .indice{
     width: 29.5%;
-    max-height: 380px;
+    max-height: 460px;
     border: 1px solid;
     padding: 5px 15px;
     background-color: rgb(255, 255, 255);
@@ -74,7 +74,7 @@ body{
 }
 .indice ul li a{
     text-decoration: none;
-    color: black;
+    color: rgb(38, 45, 98);
     font-weight:bold ;
     transition: 0.5s ease;
 }
@@ -82,6 +82,12 @@ body{
     color: rgb(125, 125, 132);
 }
 
+.indice .toolsMenu li a{
+    color: rgb(86, 160, 239);
+}
+.toolsMenu{
+    list-style: none;
+}
 
 .texto{
     margin-bottom: 10px;
@@ -165,6 +171,40 @@ body{
     
 }
 
+@media screen and (max-width: 945px) {
+    .divisor{
+        flex-direction: column;
+        gap: 15px;
+    } 
+    .contenido{
+        width: 100%;
+
+    }
+
+    .indice{
+        width: 100%;
+        max-height: 500px;
+    }
+    .indice ul li{
+        margin-top: 3%;
+    }
+
+    .texto{
+        text-align: center;
+    }
+
+    .forms{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toolsMenu{
+        list-style: none;
+    }
+
+    
+}
 
 
 
