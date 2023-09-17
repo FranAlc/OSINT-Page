@@ -99,3 +99,85 @@ function abrirTwLikeados(){
 
 
 //Respuesta a tweets
+function abrirTwReplies(){
+    const usuarioTw = document.getElementById('twRespuestas').value;
+    const repliesTwUrl = `https://twitter.com/${usuarioTw}/with_replies`;
+    window.open(repliesTwUrl, '_blank');
+}
+const btn_replies = document.getElementById('btn_busqueda_respuestas_Tw');
+btn_replies.addEventListener('click', abrirTwReplies);
+
+//Seguidores
+function abrirSeguidoresTw(){
+    const usuarioTw = document.getElementById('twSeguidores').value;
+    const seguidoresUrl = `https://twitter.com/${usuarioTw}/followers`;
+    window.open(seguidoresUrl, '_blank');
+}
+const btn_buscar_seguidores = document.getElementById('btn_busqueda_seguidores_Tw');
+btn_buscar_seguidores.addEventListener('click', abrirSeguidoresTw);
+//Seguidos
+function abrirSeguidosTw(){
+    const usuarioTw = document.getElementById('twSeguidos').value;
+    const seguidosUrl = `https://twitter.com/${usuarioTw}/following`;
+    window.open(seguidosUrl, '_blank');
+}
+const btn_buscar_seguidos = document.getElementById('btn_busqueda_seguidos_Tw');
+btn_buscar_seguidos.addEventListener('click', abrirSeguidosTw);
+
+//WebCache
+function abrirWebCacheTw(){
+    const usuarioTw = document.getElementById('twWebCache').value;
+    const webCacheUrl = `https://webcache.googleusercontent.com/search?q=cache:https://twitter.com/${usuarioTw}`; //version no actualizada
+    window.open(webCacheUrl, '_blank');
+}
+const btn_abrir_webCacheTw = document.getElementById('btn_busqueda_webCache_Tw');
+btn_abrir_webCacheTw.addEventListener('click', abrirWebCacheTw);
+
+//SocialBearing Perfil
+function abrirSocialBearingTw(){
+    const usuarioTw = document.getElementById('twSocialBearing').value;
+    const repliesTwUrl = `https://socialbearing.com/search/user/${usuarioTw}`;
+    window.open(repliesTwUrl, '_blank');
+}
+const btn_socialBearingTw = document.getElementById('btn_busqueda_socialBearing_Tw');
+btn_socialBearingTw.addEventListener('click', abrirSocialBearingTw);
+
+//Google busqueda
+function abrirBuscadorGoogle(){
+    const usuarioTw = document.getElementById('twGoogle').value;
+    const googleTwUrl = `https://www.google.com/search?q=twitter+${usuarioTw}&sca_esv=565986362&sxsrf=AM9HkKkTmzC38psQ4Y7x5WSxR7W0a8wuLA%3A1694908110056&ei=zj4GZe-HA-fW5OUPhvOCiAs&ved=0ahUKEwjvps7eqLCBAxVnK7kGHYa5ALEQ4dUDCA8&uact=5&oq=twitter+${usuarioTw}&gs_lp=Egxnd3Mtd2l6LXNlcnAiDnR3aXR0ZXIgdHdkb3ZhMgQQIxgnSNwGULAFWLAFcAF4AJABAJgBUqABUqoBATG4AQPIAQD4AQHCAggQABiiBBiwA-IDBBgBIEGIBgGQBgI&sclient=gws-wiz-serp`;
+    window.open(googleTwUrl, '_blank');
+}
+const btn_busqueda_google_Tw = document.getElementById('btn_busqueda_google_Tw');
+btn_busqueda_google_Tw.addEventListener('click', abrirBuscadorGoogle);
+
+//Bing busqueda
+function abrirBuscadorBingTw(){
+    const usuarioTw = document.getElementById('twBing').value;
+    const bingUrlTw = `https://www.bing.com/search?q=twitter.com/${usuarioTw}`;
+    window.open(bingUrlTw, '_blank');
+}
+const btn_busqueda_bing_Tw = document.getElementsByName('btn_busqueda_bing_Tw');
+btn_busqueda_bing_Tw.addEventListener('click', abrirBuscadorBingTw);
+
+//twMombreReal
+function abrirBuscadorNombreCompletoTw(){
+    const usuarioTw = document.getElementById('twMombreReal').value;
+    const nombreCompletoTwUrl = `https://twitter.com/search?q=${usuarioTw}&f=user`;
+    window.open(nombreCompletoTwUrl, '_blank');
+
+}
+
+twMombreReal
+
+//Twitonomy
+function abrirTwitonomyTw(){
+    const usuarioTw = document.getElementById('twTwitonomy').value;
+    const twitonomyUrl = `https://www.twitonomy.com/profile.php?sn=${usuarioTw}`;
+    window.open(twitonomyUrl, '_blank');
+}
+const btn_busqueda_twitonomy_Tw = document.getElementById('btn_busqueda_twitonomy_Tw');
+btn_busqueda_twitonomy_Tw.addEventListener('click', abrirTwitonomyTw);
+
+
+
