@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/tools.css">
+    <link rel="icon" type="image/jpg" href="src/img/favicon.jpg"/>
+    <title>Tools - Instagram y Twitter (busqueda social)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Búsqueda Social</h1> 
+        <a href="https://www.linkedin.com/in/franco-galan-def/" target="_blank"><img src="src/img/linke.png" alt="LinkedIn"></a>
+    
+    </header>
+    
+    <main class="principal">
+        <nav class="navegacion">
+            <li class="navegacion__item"><a href="index.html">Home</a></li>
+            <li class="navegacion__item"><a href="tools_ig_tw.html">Tools</a></li>
+        </nav>
+        <div class="divisor">
+        <section class="indice">
+            <h2 class="texto">Menú</h2><hr>
+            <ul>
+                <li><a href="index.html">Información</a></li>
+                <li><a href="osint.html">Osint</a></li>
+                <li><a href="herramientas.html">Herramientas OSINT</a></li>
+                <br>
+            </ul>
+            <h2 class="texto">Tools</h2><hr>
+            <ul class="toolsMenu">
+                <li><a href="tools_ig_tw.html">>> Instagram & Twitter</a></li>
+                <li><a href="tools_fb_email.html">Facebook & Emails</a></li>
+                <li><a href="#">LinkedIn & Maps</a></li>
+                <li><a href="#">Reddit & TikTok</a></li>
+                <li><a href="#">Motores de búsqueda</a></li>
+            </ul>
+        </section>
+        <!--
+        <section class="indice_busqueda">
+            <h2 class="texto">Búsqueda</h2><hr>
+            <ul>
+                <li><a href="tools_ig.html"><b style="color: rgb(85, 25, 137); ;">>></b> Instagram</a></li>
+                <li><a href="tools_tw.html">Twitter</a></li>
+                <li><a href="tools_github.html">Github</a></li>
+                <li><a href="tools_likedin.html">LinkedIn</a></li>
+                <li><a href="tools_facebook.html">Facebook</a></li>
+                <li><a href="tools_google.html">Google</a></li>
+            </ul>
+        </section>
+        -->
+        <section class="contenido">
+            <!-----Instagram----->
+            <h2 class="texto">Herramienta de Búsqueda de Instagram.</h2><hr><br>
+            <form action="" method="" class="forms">
+                <div class="busqueda_completa">
+                <input type="text" id="autocompletar" placeholder="Username" title="All"><button id="autocompletarTodo">Completar todo</button> <!--Boton All-->
+                </div>
+
+                <div class="red_search">
+                <!--Ig-->
+                <input type="text"  id="igPerfil" placeholder="Username" title="UsuarioIg"><button id="btn_perfil_ig" class="botones">IG Perfil</button><br>
+                <!--Toolzu-->
+                <input type="text" id="igToolzu"placeholder="Username" title=""><button id="btn_perfil_toolzu" class="botones">IG Toolzu</button><br>
+                <!--Busqueda google-->
+                <input type="text" id="busquedaGoogle" placeholder="Username" title=""><button id="btn_busqueda_google" class="botones">Búsqueda Google</button><br>
+                <!--Busqueda bing-->
+                <input type="text" id="busquedaBing" placeholder="Username" title=""><button id="btn_busqueda_bing" class="botones">Búsqueda Bing</button>
+                </div>
+
+                <div class="hasht">
+                <!--Hashtag IG-->
+                <input type="text" id="hashIg" placeholder="Hashtag IG" title="HashtagIG"><button id="btn_hashtag_ig" class="botones">Hashtag IG</button><br>
+                <!--Hashtag Dumpor-->
+                <input type="text" id="hashDumpor" placeholder="Hashtag" title="HashtagDumpor"><button id="btn_hashtag_dumport" class="botones">Hashtag Dumpor</button>    
+            </div>
+            </form><br>
+            <!-----Twitter----->
+            <h2 class="texto">Herramienta de Búsqueda de Twitter.</h2><hr><br>
+            <form action="" method="" class="forms">
+                <div class="busqueda_completa">
+                <input type="text" id="autocompletar" placeholder="Username" title="All"><button id="autocompletarTodo">Completar todo</button> <!--Boton All-->
+                </div>
+
+                <div class="red_search">
+                <!--Twitter-->
+                <input type="text"  id="twPerfil" placeholder="Username" title="UsuarioTw"><button id="btn_perfil_tw" class="botones">TW perfil</button><br>
+                <!--Tweets-->
+                <input type="text" id="tweets" placeholder="Username" title=""><button id="btn_tweets" class="botones">Tweets</button><br>
+                <!--Tweets Likeados-->
+                <input type="text" id="twLike" placeholder="Username" title=""><button id="btn_busqueda_likes_Tw" class="botones">Tweets Likes</button><br>
+                <!--Respuestas a Tweets-->
+                <input type="text" id="twRespuestas" placeholder="Username" title=""><button id="btn_busqueda_respuestas_Tw" class="botones">Respuestas a Tw</button><br>
+                <!--Busqueda Seguidores-->
+                <input type="text" id="twSeguidores" placeholder="Username" title=""><button id="btn_busqueda_seguidores_Tw" class="botones">Seguidores</button><br>
+                <!--Busqueda Seguidos-->
+                <input type="text" id="twSeguidos" placeholder="Username" title=""><button id="btn_busqueda_seguidos_Tw" class="botones">Seguidos</button><br>
+                <!--WebCache-->
+                <input type="text" id="twWebCache" placeholder="Username" title=""><button id="btn_busqueda_webCache_Tw" class="botones">Webcache</button><br>
+                <!--SocialBearing-->
+                <input type="text" id="twSocialBearing" placeholder="Username" title=""><button id="btn_busqueda_socialBearing_Tw" class="botones">SocialBearing</button><br>
+                <!--Google búsqueda-->
+                <input type="text" id="twGoogle" placeholder="Username" title=""><button id="btn_busqueda_google_Tw" class="botones">Búsqueda google</button><br>
+                <!--Bing búsqueda-->
+                <input type="text" id="twBing" placeholder="Username" title=""><button id="btn_busqueda_bing_Tw" class="botones">Búsqueda bing</button><br>
+                <!--Nombre Real-->
+                <input type="text" id="twMombreReal" placeholder="Nombre Completo" title=""><button id="btn_busqueda_nombreCompleto_Tw" class="botones">Búsqueda perfil</button><br>
+                <!--Twitonomy-->
+                <input type="text" id="twTwitonomy" placeholder="Username" title=""><button id="btn_busqueda_twitonomy_Tw" class="botones">Twitonomy</button><br>
+                </div>
+            </form>
+        </section>
+        </div>
+    </main>
+<br>
+    <footer class="pie__pagina">
+        <p>Copyright © 2023 | All Rights Reserved | Privacy Policy</p>
+        <p>Franco Galan</p>
+        <br>
+    </footer>
+    <script src="src/conf.js"></script>
+    <script src="src/btns.js"></script>
+</body>
+</html>
