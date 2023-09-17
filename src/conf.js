@@ -1,17 +1,15 @@
-const autocompletarTodoButton = document.getElementById('btn_autocompletar_ig');
-const autocompletarInput = document.getElementById('autocompletarIg');
+//Ig autocompletar
+function autocompletarIg(event){
+    event.preventDefault();
+    const autocompletarIg = document.getElementById('autocompletarIg').value;
 
-
-autocompletarTodoButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Evitar el envío del formulario
-    
-    const valorAutocompletar = autocompletarInput.value;
-
-    document.getElementById('igPerfil').value = valorAutocompletar;
-    document.getElementById('igToolzu').value = valorAutocompletar;
-    document.getElementById('busquedaGoogle').value = valorAutocompletar;
-    document.getElementById('busquedaBing').value = valorAutocompletar;
-});
+    document.getElementById('igPerfil').value = autocompletarIg;
+    document.getElementById('igToolzu').value = autocompletarIg;
+    document.getElementById('busquedaGoogle').value = autocompletarIg;
+    document.getElementById('busquedaBing').value = autocompletarIg;
+}
+const btn_autocompletar_ig = document.getElementById('btn_autocompletar_ig');
+btn_autocompletar_ig.addEventListener('click', autocompletarIg);
 
 //Tw autocompletar
 function autocompletarTw(event){
@@ -34,3 +32,5 @@ function autocompletarTw(event){
 }
 const btn_autocompletar_tw = document.getElementById('btn_autocompletar_tw');
 btn_autocompletar_tw.addEventListener('click', autocompletarTw);
+
+//Fb autocompletar
