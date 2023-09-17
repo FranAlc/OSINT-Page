@@ -17,12 +17,13 @@ function toolzuSearch(){
 }
 */
 //Instagram
-const btn_ig = document.getElementById('btn_perfil_ig');
+
 function abrirIg(){
     const usuarioIg = document.getElementById('igPerfil').value;
     const instagramUrl =`https://www.instagram.com/${usuarioIg}/`;
     window.open(instagramUrl, '_blank');
 }
+const btn_ig = document.getElementById('btn_perfil_ig');
 btn_ig.addEventListener('click', abrirIg);
 
 //Toolzu
@@ -72,6 +73,7 @@ const btn_hashtag_dumpor = document.getElementById('btn_hashtag_dumport');
 btn_hashtag_dumpor.addEventListener('click', buscarHashtagDumpor);
 
 //////////////////////////Twitter/////////////////////////////
+
 //Ver perfil
 function abrirPerfilTw(){
     const usuarioTw = document.getElementById('twPerfil').value;
@@ -157,7 +159,7 @@ function abrirBuscadorBingTw(){
     const bingUrlTw = `https://www.bing.com/search?q=twitter.com/${usuarioTw}`;
     window.open(bingUrlTw, '_blank');
 }
-const btn_busqueda_bing_Tw = document.getElementsByName('btn_busqueda_bing_Tw');
+const btn_busqueda_bing_Tw = document.getElementById('btn_busqueda_bing_Tw');
 btn_busqueda_bing_Tw.addEventListener('click', abrirBuscadorBingTw);
 
 //twMombreReal
@@ -180,4 +182,5 @@ const btn_busqueda_twitonomy_Tw = document.getElementById('btn_busqueda_twitonom
 btn_busqueda_twitonomy_Tw.addEventListener('click', abrirTwitonomyTw);
 
 
+//////////////////////////Facebook/////////////////////////////
 
