@@ -20,12 +20,16 @@ function autocompletarEmail(event){
     event.preventDefault();
 
     const inputAutoCompletarEmail = document.getElementById('autocompletarEmail').value;
-
+    //busqueda
     document.getElementById('emailGoogle').value = inputAutoCompletarEmail;
     document.getElementById('emailBing').value = inputAutoCompletarEmail;
     document.getElementById('emailGravatar').value = inputAutoCompletarEmail;
     document.getElementById('emailEmailrep').value = inputAutoCompletarEmail;
     document.getElementById('emailYandex').value = inputAutoCompletarEmail;
+    //verificacion
+    document.getElementById('emailHunterVerify').value = inputAutoCompletarEmail;
+    document.getElementById('emailSpyTox').value = inputAutoCompletarEmail;
+    document.getElementById('emailDomainData').value = inputAutoCompletarEmail;
 
 }
 const btn_autocompletar_email = document.getElementById('btn_autocompletar_email');
