@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; 
+}
+
+body{       
+    background-color: #b4b7b7;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.cabecera{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2% 1%;
+    background: #3a3b3b;
+    
+
+}
+.cabecera h1{
+    width: 85%;
+    color: rgb(255, 255, 255);
+}
+
+.cabecera img{
+    width: 30px;
+    height: 30px;
+}
+
+/*main*/
+
+.navegacion{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.navegacion__item{
+    display: inline;
+}
+
+.navegacion__item a{
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    font-size: 1.5rem;
+    font-weight:bold ;
+    transition: 0.8s ease;
+    background-color: transparent;
+}
+
+.navegacion__item a:hover{
+    color: rgb(125, 125, 132);
+}
+
+.divisor{
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+.indice{
+    width: 29.5%;
+    max-height: 460px;
+    border: 1px solid;
+    padding: 5px 15px;
+    background-color: rgb(255, 255, 255);
+}
+.indice ul li{
+    margin-top: 5% ;
+    margin-left: 10%;
+}
+.indice ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight:bold ;
+    transition: 0.5s ease;
+}
+.indice ul li a:hover{
+    color: rgb(125, 125, 132);
+}
+.indice .toolsMenu li a{
+    color: rgb(86, 160, 239);
+}
+.toolsMenu{
+    list-style: none;
+}
+
+
+.texto{
+    margin-bottom: 10px;
+}
+
+/*Explicacion*/
+.contenido{
+    width: 69.5%;
+    border: 1px solid;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.contenido img{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.contenido li{
+    margin-top: 10px;
+}
+
+/*Footer*/
+
+.pie__pagina{
+    background-color: #3a3b3b;
+    display: flex;
+    flex-direction: column;
+}
+
+.pie__pagina p{
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+@media screen and (max-width: 945px) {
+    .divisor{
+        flex-direction: column;
+        gap: 15px;
+    } 
+    .contenido{
+        width: 100%;
+
+    }
+
+    .indice{
+        width: 100%;
+        max-height: 500px;
+    }
+    .indice ul li{
+        margin-top: 3%;
+    }
+
+    .texto{
+        text-align: center;
+    }
+
+    .forms{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toolsMenu{
+        list-style: none;
+    }
+
+    
+}
