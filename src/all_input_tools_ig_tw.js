@@ -33,4 +33,3 @@ function autocompletarTw(event){
 const btn_autocompletar_tw = document.getElementById('btn_autocompletar_tw');
 btn_autocompletar_tw.addEventListener('click', autocompletarTw);
 
-//Fb autocompletar
