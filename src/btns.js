@@ -165,10 +165,10 @@ function abrirBuscadorNombreCompletoTw(){
     const usuarioTw = document.getElementById('twMombreReal').value;
     const nombreCompletoTwUrl = `https://twitter.com/search?q=${usuarioTw}&f=user`;
     window.open(nombreCompletoTwUrl, '_blank');
-
 }
+const btn_busqueda_nombreCompleto_Tw = document.getElementById('btn_busqueda_nombreCompleto_Tw');
+btn_busqueda_nombreCompleto_Tw.addEventListener('click', abrirBuscadorNombreCompletoTw);
 
-twMombreReal
 
 //Twitonomy
 function abrirTwitonomyTw(){
