@@ -79,5 +79,11 @@ function buscarAlbumFotosFb(event){
 const btn_busqueda_album_fotos = document.getElementById('btn_busqueda_album_fotos');
 btn_busqueda_album_fotos.addEventListener('click', buscarAlbumFotosFb);
 
+//redes
+//google
+
+//bing
+
+//yahoo 
 
 //////Email btns
