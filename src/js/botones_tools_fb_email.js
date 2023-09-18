@@ -81,9 +81,34 @@ btn_busqueda_album_fotos.addEventListener('click', buscarAlbumFotosFb);
 
 //redes
 //google
+function buscarUsuarioGoogleFb(event){
+    event.preventDefault();
+    const usuarioFbGoogle = document.getElementById('fbPerfilGoogle').value;
+    const usuarioFbUrl = `${usuarioFbGoogle}`; //
+    window.open(usuarioFbUrl, '_blank');
+}
+const btn_perfil_fb_google = document.getElementById('btn_perfil_fb_google');
+btn_perfil_fb_google.addEventListener('click', buscarUsuarioGoogleFb);
 
 //bing
+function buscarUsuarioBingFb(event){
+    event.preventDefault();
+    const usuarioFbBing = document.getElementById('fbPerfilBing').value;
+    const usuarioFbUrl = `${usuarioFbBing}`; //
+    window.open(usuarioFbUrl, '_blank');
+}
+const btn_perfil_fb_bing = document.getElementById('btn_perfil_fb_bing');
+btn_perfil_fb_bing.addEventListener('click', buscarUsuarioBingFb);
 
 //yahoo 
+function buscarUsuarioYahooFb(event){
+    event.preventDefault();
+    const usuarioFbYahoo = document.getElementById('fbPerfilYahoo').value;
+    const usuarioFbUrl = `${usuarioFbYahoo}`; //
+    window.open(usuarioFbUrl, '_blank');
+}
+const btn_perfil_fb_yahoo = document.getElementById('btn_perfil_fb_yahoo');
+btn_perfil_fb_yahoo.addEventListener('click', buscarUsuarioYahooFb);
+
 
 //////Email btns
