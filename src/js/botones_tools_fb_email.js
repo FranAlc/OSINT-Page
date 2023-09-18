@@ -32,31 +32,52 @@ btn_busqueda_dato_de_contacto.addEventListener('click', buscarDatosContactoFb);
 //buscar familia - relaciones
 function buscarFamiliaFb(event){
     event.preventDefault();
-    const usuarioFbFamilia = document.getElementById('fbFamilia')
+    const usuarioFbFamilia = document.getElementById('fbFamilia').value;
     const usuarioFbUrl = `https://www.facebook.com/${usuarioFbFamilia}/about_family_and_relationships`;
     window.open(usuarioFbUrl, '_blank')
 }
 const btn_busqueda_familia = document.getElementById('btn_busqueda_familia');
 btn_busqueda_familia.addEventListener('click', buscarFamiliaFb);
 
-function buscarAmigosFb(){
+//buscar amigos
+function buscarAmigosFb(event){
+    event.preventDefault();
+    const usuarioFbContactos = document.getElementById('fbContactos').value;
     const usuarioFbUrl = ` https://www.facebook.com/${usuarioFbContactos}/friends`;
+    window.open(usuarioFbUrl, '_blank');
 }
+const btn_busqueda_amigos = document.getElementById('btn_busqueda_amigos');
+btn_busqueda_amigos.addEventListener('click', buscarAmigosFb);
 
-function buscarBiografiaFb(){
-
+//biografia
+function buscarBiografiaFb(event){
+    event.preventDefault();
+    const usuarioFbBiografia = document.getElementById('fbBiografia').value;
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbBiografia}`;
+    window.open(usuarioFbUrl, '_blank');
 }
+const btn_busqueda_biografia = document.getElementById('btn_busqueda_biografia');
+btn_busqueda_biografia.addEventListener('click', buscarBiografiaFb);
 
-function buscarFotosFb(){
-
+//fotos
+function buscarFotosFb(event){
+    event.preventDefault();
+    const usuarioFbBuscarFotos = document.getElementById('fbFotos').value;
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbBuscarFotos}`;
+    window.open(usuarioFbUrl, '_blank');
 }
+const btn_busqueda_fotos = document.getElementById('btn_busqueda_fotos');
+btn_busqueda_fotos.addEventListener('click', buscarFotosFb);
 
-function buscarAlbumFotosFb(){
-
+//album fotos
+function buscarAlbumFotosFb(event){
+    event.preventDefault();
+    const usuarioFbBuscarAlbFotos = document.getElementById('fbAlbumFotos').value;
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbBuscarAlbFotos}`;
+    window.open(usuarioFbUrl, '_blank');
 }
+const btn_busqueda_album_fotos = document.getElementById('btn_busqueda_album_fotos');
+btn_busqueda_album_fotos.addEventListener('click', buscarAlbumFotosFb);
 
 
-
-
-
-//Email btns
+//////Email btns
