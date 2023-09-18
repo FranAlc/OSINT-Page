@@ -13,7 +13,7 @@ btn_perfil_fb.addEventListener('click', buscarPerfilFb);
 function buscarEducacionFb(event){
     event.preventDefault();
     const usuarioFbEducacion = document.getElementById('fbEducacion').value;
-    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbEducacion}`;
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbEducacion}/about_work_and_education`;
     window.open(usuarioFbUrl, '_blank');
 }
 const btn_busqueda_educacion = document.getElementById('btn_busqueda_educacion');
@@ -21,20 +21,26 @@ btn_busqueda_educacion.addEventListener('click',buscarEducacionFb);
 
 //datos contacto
 function buscarDatosContactoFb(event){
+    event.preventDefault();
     const usuarioFbDatosContacto = document.getElementById('fbDatosContacto').value;
-    const usuarioFbUrl = `${usuarioFbDatosContacto}`;
-    window.open(usuarioFb, '_blank');
-
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbDatosContacto}/about_contact_and_basic_info`;
+    window.open(usuarioFbUrl, '_blank');
 }
-const btn_busqueda_dato_de_contacto = document.getElementById('fbDatosContacto');
-btn_busqueda_dato_de_contacto.addEventListener('click', buscarDatosContactoFb)
+const btn_busqueda_dato_de_contacto = document.getElementById('btn_busqueda_dato_de_contacto');
+btn_busqueda_dato_de_contacto.addEventListener('click', buscarDatosContactoFb);
 
-function buscarFamiliaFb(){
-
+//buscar familia - relaciones
+function buscarFamiliaFb(event){
+    event.preventDefault();
+    const usuarioFbFamilia = document.getElementById('fbFamilia')
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbFamilia}/about_family_and_relationships`;
+    window.open(usuarioFbUrl, '_blank')
 }
+const btn_busqueda_familia = document.getElementById('btn_busqueda_familia');
+btn_busqueda_familia.addEventListener('click', buscarFamiliaFb);
 
 function buscarAmigosFb(){
-
+    const usuarioFbUrl = ` https://www.facebook.com/${usuarioFbContactos}/friends`;
 }
 
 function buscarBiografiaFb(){
