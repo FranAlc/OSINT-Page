@@ -107,6 +107,8 @@ function abrirTwLikeados(event){
     const tweetsUrl = `https://twitter.com/${usuarioTw}/likes/`;
     window.open(tweetsUrl, '_blank') 
 }
+const btn_busqueda_likes_Tw = document.getElementById('btn_busqueda_likes_Tw');
+btn_busqueda_likes_Tw.addEventListener('click', abrirTwSalientes);
 
 
 //Respuesta a tweets
