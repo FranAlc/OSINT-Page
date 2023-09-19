@@ -63,7 +63,7 @@ btn_busqueda_biografia.addEventListener('click', buscarBiografiaFb);
 function buscarFotosFb(event){
     event.preventDefault();
     const usuarioFbBuscarFotos = document.getElementById('fbFotos').value;
-    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbBuscarFotos}`;
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbBuscarFotos}/photos`;
     window.open(usuarioFbUrl, '_blank');
 }
 const btn_busqueda_fotos = document.getElementById('btn_busqueda_fotos');
@@ -73,18 +73,50 @@ btn_busqueda_fotos.addEventListener('click', buscarFotosFb);
 function buscarAlbumFotosFb(event){
     event.preventDefault();
     const usuarioFbBuscarAlbFotos = document.getElementById('fbAlbumFotos').value;
-    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbBuscarAlbFotos}`;
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbBuscarAlbFotos}/photos_albums`;
     window.open(usuarioFbUrl, '_blank');
 }
 const btn_busqueda_album_fotos = document.getElementById('btn_busqueda_album_fotos');
 btn_busqueda_album_fotos.addEventListener('click', buscarAlbumFotosFb);
+
+//videos fb 
+
+function buscarVideosFb(event){
+    event.preventDefault();
+    const usuarioFbBuscarVideos = document.getElementById('fbVideos').value;
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbBuscarVideos}/videos`;
+    window.open(usuarioFbUrl, '_blank');
+}
+const btn_busqueda_videosfb = document.getElementById('btn_busqueda_videosfb');
+btn_busqueda_videosfb.addEventListener('click', buscarVideosFb);
+
+//seguidos
+function buscarSeguidosFb(event){
+    event.preventDefault();
+    const usuarioFbBuscarSeguidos = document.getElementById('fbSeguidos').value;
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbBuscarSeguidos}/following`;
+    window.open(usuarioFbUrl, '_blank');
+}
+const btn_busqueda_seguidosfb = document.getElementById('btn_busqueda_seguidosfb');
+btn_busqueda_seguidosfb.addEventListener('click', buscarSeguidosFb);
+
+//seguidores
+function buscarSeguidoresFb(event){
+    event.preventDefault();
+    const usuarioFbBuscarSeguidores = document.getElementById('fbSeguidores').value;
+    const usuarioFbUrl = `https://www.facebook.com/${usuarioFbBuscarSeguidores}/followers`;
+    window.open(usuarioFbUrl, '_blank');
+}
+const btn_busqueda_seguidoresfb = document.getElementById('btn_busqueda_seguidoresfb');
+btn_busqueda_seguidoresfb.addEventListener('click', buscarSeguidoresFb);
+
 
 //redes
 //google
 function buscarUsuarioGoogleFb(event){
     event.preventDefault();
     const usuarioFbGoogle = document.getElementById('fbPerfilGoogle').value;
-    const usuarioFbUrl = `${usuarioFbGoogle}`; //
+    const usuarioFbUrl = `https://www.google.com/search?q=site%3Afacebook.com+${usuarioFbGoogle}`; //
     window.open(usuarioFbUrl, '_blank');
 }
 const btn_perfil_fb_google = document.getElementById('btn_perfil_fb_google');
@@ -94,7 +126,7 @@ btn_perfil_fb_google.addEventListener('click', buscarUsuarioGoogleFb);
 function buscarUsuarioBingFb(event){
     event.preventDefault();
     const usuarioFbBing = document.getElementById('fbPerfilBing').value;
-    const usuarioFbUrl = `${usuarioFbBing}`; //
+    const usuarioFbUrl = `https://www.bing.com/search?q=site%3Ainstagram.com+%22${usuarioFbBing}%22`; //
     window.open(usuarioFbUrl, '_blank');
 }
 const btn_perfil_fb_bing = document.getElementById('btn_perfil_fb_bing');
@@ -104,7 +136,7 @@ btn_perfil_fb_bing.addEventListener('click', buscarUsuarioBingFb);
 function buscarUsuarioYahooFb(event){
     event.preventDefault();
     const usuarioFbYahoo = document.getElementById('fbPerfilYahoo').value;
-    const usuarioFbUrl = `${usuarioFbYahoo}`; //
+    const usuarioFbUrl = `https://ar.search.yahoo.com/search?p=site%3Afacebook.com+%27${usuarioFbYahoo}%27`; //
     window.open(usuarioFbUrl, '_blank');
 }
 const btn_perfil_fb_yahoo = document.getElementById('btn_perfil_fb_yahoo');
