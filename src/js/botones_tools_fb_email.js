@@ -42,7 +42,7 @@ btn_busqueda_familia.addEventListener('click', buscarFamiliaFb);
 //buscar amigos
 function buscarAmigosFb(event){
     event.preventDefault();
-    const usuarioFbContactos = document.getElementById('fbContactos').value;
+    const usuarioFbContactos = document.getElementById('fbAmigos').value;
     const usuarioFbUrl = ` https://www.facebook.com/${usuarioFbContactos}/friends`;
     window.open(usuarioFbUrl, '_blank');
 }
