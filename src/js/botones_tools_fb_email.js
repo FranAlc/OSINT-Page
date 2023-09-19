@@ -46,8 +46,8 @@ function buscarAmigosFb(event){
     const usuarioFbUrl = ` https://www.facebook.com/${usuarioFbContactos}/friends`;
     window.open(usuarioFbUrl, '_blank');
 }
-const btn_busqueda_amigos = document.getElementById('btn_busqueda_amigos');
-btn_busqueda_amigos.addEventListener('click', buscarAmigosFb);
+const btn_busqueda_amigosfb = document.getElementById('btn_busqueda_amigosfb');
+btn_busqueda_amigosfb.addEventListener('click', buscarAmigosFb);
 
 //biografia
 function buscarBiografiaFb(event){
