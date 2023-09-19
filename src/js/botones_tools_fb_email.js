@@ -176,3 +176,37 @@ btn_buscar_email_yandex.addEventListener('click',abrirEmailYandex);
 
 
 
+//emailHunterVerify 
+
+function abrirEmailHunterVerify(event){
+    event.preventDefault();
+    const usuarioEmailHunterVerify = document.getElementById('emailEmailHunterVerify').value;
+    const emailUrl = `${usuarioEmailHunterVerify}`;
+    window.open(emailUrl, '_blank');
+
+}
+const btn_buscar_email_hunterVerify = document.getElementById('btn_buscar_email_hunterVerify');
+btn_buscar_email_hunterVerify.addEventListener('click',abrirEmailHunterVerify);
+
+//emailSpyTox
+
+function abrirEmailSpyTox(event){
+    event.preventDefault();
+    const usuarioEmailSpyTox = document.getElementById('emailSpyTox').value;
+    const emailUrl = `${usuarioEmailSpyTox}`;
+    window.open(emailUrl, '_blank');
+
+}
+const btn_buscar_email_spytox = document.getElementById('btn_buscar_email_spytox');
+btn_buscar_email_spytox.addEventListener('click',abrirEmailSpyTox);
+
+//emailDomainData 
+
+function abrirEmailDomainData(event){
+    event.preventDefault();
+    const usuarioEmailDomainData = document.getElementById('emailDomainData').value;
+    const emailUrl = `${usuarioEmailDomainData}`;
+    window.open(emailUrl, '_blank');
+}
+const btn_buscar_email_domaindata = document.getElementById('btn_buscar_email_domaindata');
+btn_buscar_email_domaindata.addEventListener('click',abrirEmailDomainData);
