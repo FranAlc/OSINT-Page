@@ -116,7 +116,7 @@ btn_busqueda_seguidoresfb.addEventListener('click', buscarSeguidoresFb);
 function buscarUsuarioGoogleFb(event){
     event.preventDefault();
     const usuarioFbGoogle = document.getElementById('fbPerfilGoogle').value;
-    const usuarioFbUrl = `https://www.google.com/search?q=site%3Afacebook.com+${usuarioFbGoogle}`; //
+    const usuarioFbUrl = `https://www.google.com/search?q=site%3Afacebook.com+${usuarioFbGoogle}`; 
     window.open(usuarioFbUrl, '_blank');
 }
 const btn_perfil_fb_google = document.getElementById('btn_perfil_fb_google');
@@ -126,7 +126,7 @@ btn_perfil_fb_google.addEventListener('click', buscarUsuarioGoogleFb);
 function buscarUsuarioBingFb(event){
     event.preventDefault();
     const usuarioFbBing = document.getElementById('fbPerfilBing').value;
-    const usuarioFbUrl = `https://www.bing.com/search?q=site%3Ainstagram.com+%22${usuarioFbBing}%22`; //
+    const usuarioFbUrl = `https://www.bing.com/search?q=site%3Ainstagram.com+%22${usuarioFbBing}%22`; 
     window.open(usuarioFbUrl, '_blank');
 }
 const btn_perfil_fb_bing = document.getElementById('btn_perfil_fb_bing');
@@ -136,7 +136,7 @@ btn_perfil_fb_bing.addEventListener('click', buscarUsuarioBingFb);
 function buscarUsuarioYahooFb(event){
     event.preventDefault();
     const usuarioFbYahoo = document.getElementById('fbPerfilYahoo').value;
-    const usuarioFbUrl = `https://ar.search.yahoo.com/search?p=site%3Afacebook.com+%27${usuarioFbYahoo}%27`; //
+    const usuarioFbUrl = `https://ar.search.yahoo.com/search?p=site%3Afacebook.com+%27${usuarioFbYahoo}%27`; 
     window.open(usuarioFbUrl, '_blank');
 }
 const btn_perfil_fb_yahoo = document.getElementById('btn_perfil_fb_yahoo');
