@@ -112,3 +112,67 @@ btn_perfil_fb_yahoo.addEventListener('click', buscarUsuarioYahooFb);
 
 
 //////Email btns
+
+//emailGoogle
+function abrirBuscadorGoogle(event){
+    event.preventDefault();
+    const usuarioEmailGoogle = document.getElementById('emailGoogle').value;
+    const emailUrl = `${usuarioEmailGoogle}`;
+    window.open(emailUrl, '_blank');
+
+}
+const btn_buscar_email_google = document.getElementById('btn_buscar_email_google');
+btn_buscar_email_google.addEventListener('click', abrirBuscadorGoogle);
+
+
+
+
+//emailBing 
+function abrirEmailBing(event){
+    event.preventDefault();
+    const usuarioEmailBing = document.getElementById('emailBing').value;
+    const emailUrl = `${usuarioEmailBing}`;
+    window.open(emailUrl, '_blank');
+
+}
+const btn_buscar_email_bing = document.getElementById('btn_buscar_email_bing');
+btn_buscar_email_bing.addEventListener('click', abrirEmailBing);
+
+//emailGravatar 
+
+
+function abrirEmailGravatar(event){
+    event.preventDefault();
+    const usuarioEmailGravatar = document.getElementById('emailGravatar').value;
+    const emailUrl = `${usuarioEmailGravatar}`;
+    window.open(emailUrl, '_blank');
+
+}
+const btn_buscar_email_gravatar = document.getElementById('btn_buscar_email_gravatar');
+btn_buscar_email_gravatar.addEventListener('click', abrirEmailGravatar);
+
+//Emailrep 
+
+function abrirEmailrep(event){
+    event.preventDefault();
+    const usuarioEmailrep = document.getElementById('emailEmailrep').value;
+    const emailUrl = `${usuarioEmailrep}`;
+    window.open(emailUrl, '_blank');
+
+}
+const btn_buscar_email_emailrep = document.getElementById('btn_buscar_email_emailrep');
+btn_buscar_email_emailrep.addEventListener('click', abrirEmailrep);
+
+//Yandex
+function abrirEmailYandex(event){
+    event.preventDefault();
+    const usuarioEmailYandex = document.getElementById('emailYandex').value;
+    const emailUrl = `${usuarioEmailYandex}`;
+    window.open(emailUrl, '_blank');
+
+}
+const btn_buscar_email_yandex = document.getElementById('btn_buscar_email_yandex');
+btn_buscar_email_yandex.addEventListener('click',abrirEmailYandex);
+
+
+
