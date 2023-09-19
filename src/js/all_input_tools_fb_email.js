@@ -11,6 +11,9 @@ function autocompletarFb(event){
     document.getElementById('fbBiografia').value = inputAutoCompletarFb;
     document.getElementById('fbFotos').value = inputAutoCompletarFb;
     document.getElementById('fbAlbumFotos').value = inputAutoCompletarFb;
+    document.getElementById('fbSeguidos').value = inputAutoCompletarFb;
+    document.getElementById('fbSeguidores').value = inputAutoCompletarFb;
+    document.getElementById('fbVideos').value = inputAutoCompletarFb;
 }
 const btn_autocompletar_fb = document.getElementById('btn_autocompletar_fb');
 btn_autocompletar_fb.addEventListener('click', autocompletarFb);
