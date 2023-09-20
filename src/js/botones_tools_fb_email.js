@@ -213,7 +213,7 @@ btn_buscar_email_yandex.addEventListener('click',abrirEmailYandex);
 function abrirEmailHunterVerify(event){
     event.preventDefault();
     const usuarioEmailHunterVerify = document.getElementById('emailEmailHunterVerify').value;
-    const emailUrl = `${usuarioEmailHunterVerify}`;
+    const emailUrl = `https://hunter.io/email-verifier/${usuarioEmailHunterVerify}`;
     window.open(emailUrl, '_blank');
 
 }
@@ -224,8 +224,8 @@ btn_buscar_email_hunterVerify.addEventListener('click',abrirEmailHunterVerify);
 
 function abrirEmailSpyTox(event){
     event.preventDefault();
-    const usuarioEmailSpyTox = document.getElementById('emailSpyTox').value;
-    const emailUrl = `${usuarioEmailSpyTox}`;
+    const usuarioEmailSpyTox = document.getElementById('emailSpyTox').value; //no requiere
+    const emailUrl = `https://www.spytox.com/`;
     window.open(emailUrl, '_blank');
 
 }
@@ -237,7 +237,7 @@ btn_buscar_email_spytox.addEventListener('click',abrirEmailSpyTox);
 function abrirEmailDomainData(event){
     event.preventDefault();
     const usuarioEmailDomainData = document.getElementById('emailDomainData').value;
-    const emailUrl = `${usuarioEmailDomainData}`;
+    const emailUrl = `http://domainbigdata.com/email/${usuarioEmailDomainData}`;
     window.open(emailUrl, '_blank');
 }
 const btn_buscar_email_domaindata = document.getElementById('btn_buscar_email_domaindata');
