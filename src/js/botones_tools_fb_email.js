@@ -149,7 +149,7 @@ btn_perfil_fb_yahoo.addEventListener('click', buscarUsuarioYahooFb);
 function abrirBuscadorGoogle(event){
     event.preventDefault();
     const usuarioEmailGoogle = document.getElementById('emailGoogle').value;
-    const emailUrl = `${usuarioEmailGoogle}`;
+    const emailUrl = `https://www.google.com/search?q=%22${usuarioEmailGoogle}%22`;
     window.open(emailUrl, '_blank');
 
 }
@@ -163,7 +163,7 @@ btn_buscar_email_google.addEventListener('click', abrirBuscadorGoogle);
 function abrirEmailBing(event){
     event.preventDefault();
     const usuarioEmailBing = document.getElementById('emailBing').value;
-    const emailUrl = `${usuarioEmailBing}`;
+    const emailUrl = `https://www.bing.com/search?q=%22${usuarioEmailBing}%22`;
     window.open(emailUrl, '_blank');
 
 }
@@ -176,7 +176,7 @@ btn_buscar_email_bing.addEventListener('click', abrirEmailBing);
 function abrirEmailGravatar(event){
     event.preventDefault();
     const usuarioEmailGravatar = document.getElementById('emailGravatar').value;
-    const emailUrl = `${usuarioEmailGravatar}`;
+    const emailUrl = `https://en.gravatar.com/site/check/${usuarioEmailGravatar}`;
     window.open(emailUrl, '_blank');
 
 }
@@ -188,7 +188,7 @@ btn_buscar_email_gravatar.addEventListener('click', abrirEmailGravatar);
 function abrirEmailrep(event){
     event.preventDefault();
     const usuarioEmailrep = document.getElementById('emailEmailrep').value;
-    const emailUrl = `${usuarioEmailrep}`;
+    const emailUrl = `https://emailrep.io/query/${usuarioEmailrep}`;
     window.open(emailUrl, '_blank');
 
 }
@@ -199,7 +199,7 @@ btn_buscar_email_emailrep.addEventListener('click', abrirEmailrep);
 function abrirEmailYandex(event){
     event.preventDefault();
     const usuarioEmailYandex = document.getElementById('emailYandex').value;
-    const emailUrl = `${usuarioEmailYandex}`;
+    const emailUrl = `https://yandex.com/search/?text=%22${usuarioEmailYandex}%22`;
     window.open(emailUrl, '_blank');
 
 }
