@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/tools.css">
+    <link rel="icon" type="image/jpg" href="src/img/favicon.jpg"/>
+    <title>Tools - Facebook y Emails (busqueda social)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Búsqueda Social</h1> 
+        <a href="https://www.linkedin.com/in/franco-galan-def/" target="_blank"><img src="src/img/linke.png" alt="LinkedIn"></a>
+    
+    </header>
+    
+    <main class="principal">
+        <nav class="navegacion">
+            <li class="navegacion__item"><a href="index.html">Home</a></li>
+            <li class="navegacion__item"><a href="tools_ig_tw.html">Tools</a></li>
+        </nav>
+        <div class="divisor">
+            <section class="indice">
+                <h2 class="texto">Menú</h2><hr>
+                <ul>
+                    <li><a href="index.html">Información</a></li>
+                <li><a href="osint.html">Osint</a></li>
+                <li><a href="herramientas.html">Herramientas OSINT</a></li>
+                    <br>
+                </ul>
+                <h2 class="texto">Tools</h2><hr>
+                <ul class="toolsMenu">
+                    <li><a href="tools_ig_tw.html">Instagram & Twitter</a></li>
+                    <li><a href="tools_fb_email.html">Facebook & Emails</a></li>
+                    <li><a href="tools_linkedin_maps.html">>> LinkedIn & Maps</a></li>
+                    <li><a href="#">Reddit & TikTok</a></li>
+                    <li><a href="#">Motores de búsqueda</a></li><br>
+                </ul>
+            </section>
+    <section class="contenido">
+            <!-----LinkedIn----->
+            <h2 class="texto">Herramienta de Búsqueda de LinkedIn.</h2><hr><br>
+            <form action="" method="" class="forms">
+    
+        <div class="red_search">
+            <!---------Búsqueda General---------->
+            <!--Buscar por google-->
+            <p>Empresa - Persona - Escuela - Palabra clave</p>
+            <input type="text"  id="lkNombreGoogle" placeholder="Buscador" title=""><button id="btn_buscar_user_google" class="botones">Buscar en google</button><br>
+            <input type="text"  id="lkNombreBing" placeholder="Buscador" title=""><button id="btn_buscar_user_bing" class="botones">Buscar en Bing</button><br><br>
+            <!--Nombre de la empresa-->
+            <input type="text"  id="lkNombreEmpresa" placeholder="Palabra clave" title=""><button id="btn_buscar_nombre_empresa" class="botones">Buscar empresa</button><br>
+            <!--Nombre de la educación-->
+            <input type="text" id="lkNombreEducacion" placeholder="Palabra clave" title=""><button id="btn_buscar_nombre_instituto" class="botones">Buscar instituto</button><br>
+            <!--Nombre del evento -->
+            <input type="text" id="lkNombreEvento" placeholder="Palabra clave" title=""><button id="btn_buscar_nombre_evento" class="botones">Buscar evento</button><br>
+            <!--Nombre del grupo -->
+            <input type="text" id="lkNombreGrupo" placeholder="Palabra clave" title=""><button id="btn_buscar_nombre_grupo" class="botones">Buscar grupo</button><br><br>
+            
+            <!-------Búsqueda Específica--------->
+            <!--Nombre de la persona-->
+            <input type="text"  id="lkPerfil" placeholder="Username o nombre real" title=""><button id="btn_buscar_nombre_persona" class="botones">Perfil</button><br>
+            <!--Buscar foto en google-->
+            <input type="text" id="lkFotosGoogle" placeholder="Username o nombre real" title=""><button id="btn_buscar_foto_googlelk" class="botones">Fotos de Google</button><br>
+            <!--Buscar foto en Bing-->
+            <input type="text" id="lkFotosBing" placeholder="Username o nombre real" title=""><button id="btn_buscar_foto_binglk" class="botones">Fotos de Bing</button><br>
+        </div></form>
+    
+            <!-----Maps----->
+        <h2 class="texto">Herramienta de Búsqueda de Maps.</h2><hr><br>
+        <form action="" method="" class="forms">
+    <div class="red_search">
+        <!--Google maps-->
+        <input type="text"  id="googleMapsLatitud" placeholder="Latitud" title="maps">
+        <input type="text"  id="googleMapsLongitud" placeholder="Longitud" title="maps"><button id="btn_buscar_latitud_longitud_google" class="botones">Mapa de Google</button><br>
+        <!--Bing maps-->
+        <input type="text"  id="bingMapsLatitud" placeholder="Latitud" title="maps">
+        <input type="text"  id="bingMapsLongitud" placeholder="Longitud" title="maps"><button id="btn_buscar_latitud_longitud_bing" class="botones">Mapa de Bing</button><br>
+        
+    
+    </div></form>
+
+
+
+
+
+
+
+    
+    
+        
+    
+    
+    
+    
+    
+    </section>
+    </main>
+<br>
+    <footer class="pie__pagina">
+        <p>Copyright © 2023 | All Rights Reserved | Privacy Policy</p>
+        <p>Franco Galan</p>
+        <br>
+    </footer>
+    <script src="src/js/all_input_tools_fb_email.js"></script>
+    <script src="src/js/botones_tools_fb_email.js"></script>
+</body>
+</html>
