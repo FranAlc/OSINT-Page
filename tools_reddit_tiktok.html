@@ -46,10 +46,21 @@
         <form action="" method="" class="forms">
 
     <div class="red_search">
-        <!---------Búsqueda General---------->
+        <!---------Búsqueda Completa---------->
+        <div class="busqueda_completa">
+            <input type="text" id="autocompletarReddit" placeholder="Username" title="All"><button id="btn_autocompletar_reddit">Completar todo</button> <!--Boton All-->
+        </div>
 
         <!--Nombre del usuario-->
         <input type="text"  id="rdNombreUsuario" placeholder="Username" title=""><button id="btn_buscar_perfil_reddit" class="botones">Perfil</button><br>
+        <!--Persona especifica y publicacion-->
+        <input type="text"  id="rdNombreReal" placeholder="Nombre real" title=""><input type="text"  id="rdPublicacion" placeholder="Publicación" title=""><button id="btn_buscar_personaEspecifica_reddit" class="botones">Buscar</button><br>
+        
+        <!--Google-->
+        <input type="text"  id="rdGoogle" placeholder="Busqueda" title=""><button id="btn_buscar_google_reddit" class="botones">Google</button><br>
+        <!--Buscador global por navegadores-->
+        <input type="text"  id="rdBuscadorGlobal" placeholder="Nombre real" title=""><button id="btn_buscador_global_reddit" class="botones">Buscador global</button><br>
+
         
     </div></form>
     </section>
@@ -60,7 +71,7 @@
         <p>Franco Galan</p>
         <br>
     </footer>
-    <script src="src/js/all_input_tools_fb_email.js"></script>
-    <script src="src/js/botones_tools_fb_email.js"></script>
+    <script src="src/js/all_input_tools_reddit_tiktok.js"></script>
+    <script src="src/js/botones_tools_reddit_tiktok.js"></script>
 </body>
 </html>
