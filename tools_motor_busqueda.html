@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/tools.css">
+    <link rel="icon" type="image/jpg" href="src/img/favicon.jpg"/>
+    <title>Tools - Busqueda y fotos (busqueda social)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Búsqueda Social</h1> 
+        <a href="https://www.linkedin.com/in/franco-galan-def/" target="_blank"><img src="src/img/linke.png" alt="LinkedIn"></a>
+    
+    </header>
+    
+    <main class="principal">
+        <nav class="navegacion">
+            <li class="navegacion__item"><a href="index.html">Home</a></li>
+            <li class="navegacion__item"><a href="tools_ig_tw.html">Tools</a></li>
+        </nav>
+        <div class="divisor">
+            <section class="indice">
+                <h2 class="texto">Menú</h2><hr>
+                <ul>
+                    <li><a href="index.html">Información</a></li>
+                <li><a href="osint.html">Osint</a></li>
+                <li><a href="herramientas.html">Herramientas OSINT</a></li>
+                    <br>
+                </ul>
+                <h2 class="texto">Tools</h2><hr>
+                <ul class="toolsMenu">
+                    <li><a href="tools_ig_tw.html">Instagram & Twitter</a></li>
+                    <li><a href="tools_fb_email.html">Facebook & Emails</a></li>
+                    <li><a href="tools_linkedin_maps.html">LinkedIn & Maps</a></li>
+                    <li><a href="tools_reddit_tiktok.html">Reddit & TikTok</a></li>
+                    <li><a href="tools_motor_busqueda.html">>> Motores de búsqueda</a></li><br>
+                </ul>
+            </section>
+    <section class="contenido">
+        <!-----Motor de búsqueda----->
+        <h2 class="texto">Herramienta de Navegación de Búsqueda.</h2><hr><br>
+        <form action="" method="" class="forms">
+
+    <div class="red_search">
+        <!---------Auto completado---------->
+        <div class="busqueda_completa">
+            <input type="text" id="autocompletarReddit" placeholder="Términos de búsqueda" title="All"><button id="btn_autocompletar_reddit">Completar todo</button> <!--Boton All-->
+        </div>
+
+        <!--Google-->
+        <input type="text"  id="searchGoogle" placeholder="Términos de búsqueda" title=""><button id="btn_buscador_google" class="botones">Google</button><br>
+        <!--Bing-->
+        <input type="text"  id="searchBing" placeholder="Términos de búsqueda" title=""><button id="btn_buscador_bing" class="botones">Bing</button><br>
+        <!--Yandex-->
+        <input type="text"  id="searchYandex" placeholder="Términos de búsqueda" title=""><button id="btn_buscador_yandex" class="botones">Yandex</button><br>
+        <!--Baidu-->
+        <input type="text"  id="searchBaidu" placeholder="Términos de búsqueda" title=""><button id="btn_buscador_baidu" class="botones">Baidu</button><br>
+        <!--Brave-->
+        <input type="text"  id="searchBrave" placeholder="Términos de búsqueda" title=""><button id="btn_buscador_brave" class="botones">Brave</button><br>
+        <!--DuckDuckGo-->
+        <input type="text"  id="searchDuckDuckGo" placeholder="Términos de búsqueda" title=""><button id="btn_buscador_duckduckgo" class="botones">DuckDuckGo</button><br>
+        <!--Qwant-->
+        <input type="text"  id="searchQwant" placeholder="Términos de búsqueda" title=""><button id="btn_buscador_qwant" class="botones">Qwant</button><br>
+        
+    </div></form>
+        <h2 class="texto">Herramienta de Búsqueda de Fotos.</h2><hr><br>
+        <form action="" method="" class="forms">
+    <div class="red_search">
+        
+        <!--Google Fotos-->
+        <input type="text"  id="searchGoogleFotos" placeholder="URL de la Imagen" title=""><button id="btn_buscador_googleFotos" class="botones">Google Imágenes</button><br>
+        <!--Google Lens-->
+        <input type="text"  id="searchGoogleLens" placeholder="URL de la Imagen" title=""><button id="btn_buscador_googleLens" class="botones">Google Lens</button><br>
+        <!--Bing-->
+        <input type="text"  id="searchBingUrl" placeholder="URL de la Imagen" title=""><button id="btn_buscador_bingUrl" class="botones">Bing</button><br>
+        <!--Yandex Imagenes-->
+        <input type="text"  id="searchYandexFotos" placeholder="URL de la Imagen" title=""><button id="btn_buscador_yandexFotos" class="botones">Yandex Imágenes</button><br><br>
+        <!--Instagram Imagenes-->
+        <input type="text"  id="searchInstagramFotos" placeholder="Username" title=""><button id="btn_buscador_InstagramFotos" class="botones">Instagram</button><br>
+        <!--Tumblr Imagenes-->
+        <input type="text"  id="searchTumblrFotos" placeholder="Username" title=""><button id="btn_buscador_tumblrFotos" class="botones">Tumblr Imágenes</button><br>
+        <!--Twitter Imagenes-->
+        <input type="text"  id="searchTwitterFotos" placeholder="Username" title=""><button id="btn_buscador_twitterFotos" class="botones">Twitter Imágenes</button><br>
+
+    </div></form>
+
+    </section>
+    </main>
+    <br>
+    <footer class="pie__pagina">
+        <p>Copyright © 2023 | All Rights Reserved | Privacy Policy</p>
+        <p>Franco Galan</p>
+        <br>
+    </footer>
+    <script src="src/js/all_input_tools_reddit_tiktok.js"></script>
+    <script src="src/js/botones_tools_reddit_tiktok.js"></script>
+</body>
+</html>
