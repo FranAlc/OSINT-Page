@@ -43,6 +43,19 @@ function buscadorGlobalReddit(event){
 const btn_buscador_global_reddit = document.getElementById('btn_buscador_global_reddit');
 btn_buscador_global_reddit.addEventListener('click', buscadorGlobalReddit);
 
+
+//Brave Reddit
+function buscadorBraveReddit(event){
+    event.preventDefault();
+    const inputName = document.getElementById('rdsearchBrave').value;
+    const url = `https://search.brave.com/search?q=site%3Areddit.com+%27${inputName}%27&source=web`; //brave
+    window.open(url, '_blank');
+    
+}
+const btn_buscador_brave_reddit = document.getElementById('btn_buscador_brave_reddit');
+btn_buscador_brave_reddit.addEventListener('click', buscadorBraveReddit);
+
+
 //////////////Tiktok///////////////
 //Buscar perfil exacto
 function busquedaPerfilTiktok(event){
@@ -89,3 +102,15 @@ function buscadorGlobalTiktok(event){
 }
 const btn_buscador_global_tiktok = document.getElementById('btn_buscador_global_tiktok');
 btn_buscador_global_tiktok.addEventListener('click', buscadorGlobalTiktok);
+
+
+//Brave Tiktok
+function buscadorBraveTiktok(event){
+    event.preventDefault();
+    const inputName = document.getElementById('tktksearchBrave').value;
+    const url = `https://search.brave.com/search?q=site%3Atiktok.com+%27${inputName}%27&source=web`; //brave
+    window.open(url, '_blank');
+    
+}
+const btn_buscador_brave_tiktok = document.getElementById('btn_buscador_brave_tiktok');
+btn_buscador_brave_tiktok.addEventListener('click', buscadorBraveTiktok);
