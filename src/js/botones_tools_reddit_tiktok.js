@@ -33,7 +33,7 @@ btn_buscar_google_reddit.addEventListener('click', buscarGoogleReddit);
 //Busqueda Global
 function buscadorGlobalReddit(event){
     event.preventDefault();
-    const inputName = document.getElementById('rdGoogle').value;
+    const inputName = document.getElementById('rdBuscadorGlobal').value;
     const url = `https://www.bing.com/search?q=site%3A+reddit.com+%27${inputName}%27`; //bing
     const url2 = `https://yandex.com/search/?text=site%3A+reddit.com+%27${inputName}%27`; //yandex
     window.open(url, '_blank');
@@ -78,3 +78,14 @@ btn_buscar_google_tiktok.addEventListener('click', busquedaGoogleTiktok);
 
 
 //Busqueda global
+function buscadorGlobalTiktok(event){
+    event.preventDefault();
+    const inputName = document.getElementById('tktkBuscadorGlobal').value;
+    const url = `https://www.bing.com/search?q=site%3A+tiktok.com+%27${inputName}%27`; //bing
+    const url2 = `https://yandex.com/search/?text=site%3A+tiktok.com+%27${inputName}%27`; //yandex
+    window.open(url, '_blank');
+    window.open(url2, '_blank');
+    
+}
+const btn_buscador_global_tiktok = document.getElementById('btn_buscador_global_tiktok');
+btn_buscador_global_tiktok.addEventListener('click', buscadorGlobalTiktok);
