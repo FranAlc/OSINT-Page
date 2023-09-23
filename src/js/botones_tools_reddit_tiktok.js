@@ -48,7 +48,7 @@ btn_buscador_global_reddit.addEventListener('click', buscadorGlobalReddit);
 function busquedaPerfilTiktok(event){
     event.preventDefault();
     const tktkNombreUsuario = document.getElementById('tktkNombreUsuario').value;
-    const url = `${tktkNombreUsuario}`;
+    const url = `https://www.tiktok.com/@${tktkNombreUsuario}`;
     window.open(url, '_blank');
 }
 const btn_buscar_perfil_tiktok = document.getElementById('btn_buscar_perfil_tiktok');
@@ -59,41 +59,12 @@ btn_buscar_perfil_tiktok.addEventListener('click', busquedaPerfilTiktok);
 function busquedaPerfilesRelacionadosTiktok(event){
     event.preventDefault();
     const tktkNombreUsuarioPerfiles = document.getElementById('tktkNombreUsuarioPerfiles').value;
-    const url = `${tktkNombreUsuarioPerfiles}`;
+    const url = `https://www.tiktok.com/search?q=${tktkNombreUsuarioPerfiles}`;
     window.open(url, '_blank');
 }
 const btn_buscar_perfiles_tiktok = document.getElementById('btn_buscar_perfiles_tiktok');
 btn_buscar_perfiles_tiktok.addEventListener('click', busquedaPerfilesRelacionadosTiktok);
 
-//Seguidores
-function busquedaSeguidoresTiktok(event){
-    event.preventDefault();
-    const tktkNombreUsuario = document.getElementById('tktkSeguidores').value;
-    const url = `${tktkNombreUsuario}`;
-    window.open(url, '_blank');
-}
-const btn_buscar_seguidores_tiktok = document.getElementById('btn_buscar_seguidores_tiktok');
-btn_buscar_seguidores_tiktok.addEventListener('click', busquedaSeguidoresTiktok);
-
-//Seguidos
-function busquedaSeguidosTiktok(event){
-    event.preventDefault();
-    const tktkNombreUsuario = document.getElementById('tktkSeguidos').value;
-    const url = `${tktkNombreUsuario}`;
-    window.open(url, '_blank');
-}
-const btn_buscar_seguidos_tiktok = document.getElementById('btn_buscar_seguidos_tiktok');
-btn_buscar_seguidos_tiktok.addEventListener('click', busquedaSeguidosTiktok);
-
-//Likes
-function busquedaLikesTiktok(event){
-    event.preventDefault();
-    const tktkNombreUsuario = document.getElementById('tktkLikes').value;
-    const url = `${tktkNombreUsuario}`;
-    window.open(url, '_blank');
-}
-const btn_buscar_likes_tiktok = document.getElementById('btn_buscar_likes_tiktok');
-btn_buscar_likes_tiktok.addEventListener('click', busquedaLikesTiktok);
 
 //Google
 function busquedaGoogleTiktok(event){
