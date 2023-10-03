@@ -101,4 +101,32 @@ function abrirBuscadorGoogleMaps(event){
 const btn_buscar_lugar_google = document.getElementById('btn_buscar_lugar_google');
 btn_buscar_lugar_google.addEventListener('click',abrirBuscadorGoogleMaps);
 
+//Google maps ubicacion
+
+function abrirBuscadorGMaps(event){
+    event.preventDefault();
+    const lugarLatitud = document.getElementById('googleMapsLatitud').value;
+    const lugarLongitud = document.getElementById('googleMapsLongitud').value;
+
+    const url = `https://www.google.com/maps/@?api=1&map_action=map&center=${lugarLatitud},${lugarLongitud}&zoom=18&basemap=satellite`;
+    window.open(url, '_blank');
+}
+const btn_buscar_latitud_longitud_google = document.getElementById('btn_buscar_latitud_longitud_google');
+btn_buscar_latitud_longitud_google.addEventListener('click',abrirBuscadorGMaps);
+
+//Bing maps
+function abrirBuscadorBingMaps(event){
+    event.preventDefault();
+    const lugarLatitud = document.getElementById('bingMapsLatitud').value;
+    const lugarLongitud = document.getElementById('bingMapsLongitud').value;
+    const url = 'https://www.bing.com/maps?cp=' + lugarLatitud + '~' + lugarLongitud + '&lvl=20&sty=a';
+    window.open(url, '_blank');
+}
+const btn_buscar_latitud_longitud_bing = document.getElementById('btn_buscar_latitud_longitud_bing');
+btn_buscar_latitud_longitud_bing.addEventListener('click',abrirBuscadorBingMaps);
+
+
+
+
+
 
