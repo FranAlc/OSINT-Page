@@ -33,3 +33,24 @@ function abrirBuscadorNombreEmpresa(event){
 const btn_buscar_nombre_empresa = document.getElementById('btn_buscar_nombre_empresa');
 btn_buscar_nombre_empresa.addEventListener('click',abrirBuscadorNombreEmpresa);
 
+//Nombre institucion
+
+function abrirBuscadorNombreEducacion(event){
+    event.preventDefault();
+    const usuario = document.getElementById('lkNombreEducacion').value;
+    const url = `https://www.linkedin.com/search/results/schools/?keywords=${usuario}`;
+    window.open(url, '_blank');
+}
+const btn_buscar_nombre_instituto = document.getElementById('btn_buscar_nombre_instituto');
+btn_buscar_nombre_instituto.addEventListener('click',abrirBuscadorNombreEducacion);
+
+//Nombre evento
+
+function abrirBuscadorNombreEvento(event){
+    event.preventDefault();
+    const usuario = document.getElementById('lkNombreEvento').value;
+    const url = `https://www.linkedin.com/search/results/events/?keywords=${usuario}`;
+    window.open(url, '_blank');
+}
+const btn_buscar_nombre_evento = document.getElementById('btn_buscar_nombre_evento');
+btn_buscar_nombre_evento.addEventListener('click',abrirBuscadorNombreEvento);
