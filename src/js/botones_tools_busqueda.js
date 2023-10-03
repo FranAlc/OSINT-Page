@@ -2,7 +2,7 @@
 function abrirSearchGoogle(event){
     event.preventDefault();
     const usuario = document.getElementById('searchGoogle').value;
-    const url = `${usuario}`;
+    const url = `https://google.com/search?q=${usuario}&tbs=cdr:1,cd_min:1/1/0,sbd:1`;
     window.open(url, '_blank');
 
 }
@@ -12,7 +12,7 @@ btn_buscador_google.addEventListener('click',abrirSearchGoogle);
 function abrirSearchBing(event){
     event.preventDefault();
     const usuario = document.getElementById('searchBing').value;
-    const url = `${usuario}`;
+    const url = `https://bing.com/news/search?q="${usuario}"`;
     window.open(url, '_blank');
 
 }
@@ -22,7 +22,7 @@ btn_buscador_bing.addEventListener('click',abrirSearchBing);
 function abrirSearchYandex(event){
     event.preventDefault();
     const usuario = document.getElementById('searchYandex').value;
-    const url = `${usuario}`;
+    const url = `https://www.yandex.com/yandsearch?text='${usuario}'`;
     window.open(url, '_blank');
 
 }
@@ -33,7 +33,7 @@ btn_buscador_yandex.addEventListener('click',abrirSearchBing);
 function abrirSearchBaidu(event){
     event.preventDefault();
     const usuario = document.getElementById('searchBaidu').value;
-    const url = `${usuario}`;
+    const url = `https://baidu.com/s?wd=${usuario}`;
     window.open(url, '_blank');
 
 }
@@ -44,7 +44,7 @@ btn_buscador_baidu.addEventListener('click', abrirSearchBaidu);
 function abrirSearchBrave(event){
     event.preventDefault();
     const usuario = document.getElementById('searchBrave').value;
-    const url = `${usuario}`;
+    const url = `https://search.brave.com/search?q=${usuario}`;
     window.open(url, '_blank');
 
 }
@@ -54,7 +54,7 @@ btn_buscador_brave.addEventListener('click', abrirSearchBrave);
 function abrirSearchDuckDuckGo(event){
     event.preventDefault();
     const usuario = document.getElementById('searchDuckDuckGo').value;
-    const url = `${usuario}`;
+    const url = `https://duckduckgo.com/?q=${usuario}`;
     window.open(url, '_blank');
 
 }
@@ -64,7 +64,7 @@ btn_buscador_duckduckgo.addEventListener('click', abrirSearchDuckDuckGo);
 function abrirSearchQwant(event){
     event.preventDefault();
     const usuario = document.getElementById('searchQwant').value;
-    const url = `${usuario}`;
+    const url = `https://www.qwant.com/?q=${usuario}`;
     window.open(url, '_blank');
 
 }
