@@ -75,3 +75,15 @@ function abrirBuscadorNombreFoto(event){
 }
 const btn_buscar_foto_googlelk = document.getElementById('btn_buscar_foto_googlelk');
 btn_buscar_foto_googlelk.addEventListener('click',abrirBuscadorNombreFoto);
+
+//Buscar imgs Bing
+function abrirBuscadorNombreFotoBing(event){
+    event.preventDefault();
+    const usuario = document.getElementById('lkFotosBing').value;
+    const url = `https://www.bing.com/images/search?q=site%3alinkedin.com+%22${usuario}%22`;
+    const url2 = `https://www.bing.com/images/search?q=${usuario}%20linkedin`;
+    window.open(url, '_blank');
+    window.open(url2, '_blank');
+}
+const btn_buscar_foto_binglk = document.getElementById('btn_buscar_foto_binglk');
+btn_buscar_foto_binglk.addEventListener('click',abrirBuscadorNombreFotoBing);
