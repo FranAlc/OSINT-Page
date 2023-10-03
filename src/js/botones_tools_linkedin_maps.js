@@ -87,3 +87,18 @@ function abrirBuscadorNombreFotoBing(event){
 }
 const btn_buscar_foto_binglk = document.getElementById('btn_buscar_foto_binglk');
 btn_buscar_foto_binglk.addEventListener('click',abrirBuscadorNombreFotoBing);
+
+//Maps
+
+//Google maps 
+
+function abrirBuscadorGoogleMaps(event){
+    event.preventDefault();
+    const lugar = document.getElementById('googleMaps').value;
+    const url = `https://www.google.com/maps/place/${lugar}`;
+    window.open(url, '_blank');
+}
+const btn_buscar_lugar_google = document.getElementById('btn_buscar_lugar_google');
+btn_buscar_lugar_google.addEventListener('click',abrirBuscadorGoogleMaps);
+
+
