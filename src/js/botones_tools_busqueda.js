@@ -72,3 +72,76 @@ const btn_buscador_qwant = document.getElementById('btn_buscador_qwant');
 btn_buscador_qwant.addEventListener('click', abrirSearchQwant);
 
 //botones de busqueda por img
+
+function abrirSearchGoogleFotos(event){
+    event.preventDefault();
+    const usuario = document.getElementById('searchGoogleFotos').value;
+    const url = `https://www.google.com/searchbyimage?image_url=${usuario}`;
+    window.open(url, '_blank');
+
+}
+const btn_buscador_googleFotos = document.getElementById('btn_buscador_googleFotos');
+btn_buscador_googleFotos.addEventListener('click', abrirSearchGoogleFotos);
+
+
+function abrirSearchGoogleLens(event){
+    event.preventDefault();
+    const usuario = document.getElementById('searchGoogleLens').value;
+    const url = `https://lens.google.com/uploadbyurl?url=${usuario}`;
+    window.open(url, '_blank');
+
+}
+const btn_buscador_googleLens = document.getElementById('btn_buscador_googleLens');
+btn_buscador_googleLens.addEventListener('click', abrirSearchGoogleLens);
+
+
+function abrirSearchBingUrl(event){
+    event.preventDefault();
+    const usuario = document.getElementById('searchBingUrl').value;
+    const url = `https://www.bing.com/images/search?view=detailv2&iss=sbi&q=imgurl:${usuario}`;
+    window.open(url, '_blank');
+
+}
+const btn_buscador_bingUrl = document.getElementById('btn_buscador_bingUrl');
+btn_buscador_bingUrl.addEventListener('click', abrirSearchBingUrl);
+
+function abrirSearchYandexFotos(event){
+    event.preventDefault();
+    const usuario = document.getElementById('searchYandexFotos').value;
+    const url = `https://yandex.com/images/search?rpt=imageview&url=${usuario}`;
+    window.open(url, '_blank');
+
+}
+const btn_buscador_yandexFotos = document.getElementById('btn_buscador_yandexFotos');
+btn_buscador_yandexFotos.addEventListener('click', abrirSearchYandexFotos);
+
+function abrirSearchInstagramFotos(event){
+    event.preventDefault();
+    const usuario = document.getElementById('searchInstagramFotos').value;
+    const url = `https://www.google.com/search?tbm=isch&q=site%3Ainstagram.com+${usuario}`;
+    window.open(url, '_blank');
+
+}
+const btn_buscador_InstagramFotos = document.getElementById('btn_buscador_InstagramFotos');
+btn_buscador_InstagramFotos.addEventListener('click', abrirSearchInstagramFotos);
+
+
+function abrirSearchTumblrFotos(event){
+    event.preventDefault();
+    const usuario = document.getElementById('searchTumblrFotos').value;
+    const url = `https://www.tumblr.com/search/${usuario}`;
+    window.open(url, '_blank');
+
+}
+const btn_buscador_tumblrFotos = document.getElementById('btn_buscador_tumblrFotos');
+btn_buscador_tumblrFotos.addEventListener('click', abrirSearchTumblrFotos);
+
+function abrirSearchTwitterFotos(event){
+    event.preventDefault();
+    const usuario = document.getElementById('searchTwitterFotos').value;
+    const url = `https://twitter.com/search?f=image&q=${usuario}`;
+    window.open(url, '_blank');
+
+}
+const btn_buscador_twitterFotos = document.getElementById('btn_buscador_twitterFotos');
+btn_buscador_twitterFotos.addEventListener('click',  abrirSearchTwitterFotos);
